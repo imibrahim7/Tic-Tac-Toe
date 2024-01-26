@@ -1,0 +1,122 @@
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(10px); /* Adjust the blur strength as needed */
+    z-index: -1;
+}
+
+.fc-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8; /* Adjust the opacity as needed */
+}
+
+.status-container {
+    text-align: center;
+    color: white;
+}
+
+.status {
+    margin: 20px 0;
+}
+/* Add the rest of your existing styles below */
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    width: 5rem; 
+    height: 5rem; 
+    background-color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    margin: 0.2rem;
+    cursor: pointer;
+}
+
+#cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    width: 250px;
+    margin: auto;
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+
+}
+
+.restart-btn {
+    width: 200px;
+    height: 70px;
+    background-color: #dae8eaa5;
+    color: white;
+    border: 1px solid #dae8eaa5;
+    border-radius: 20px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.restart-btn:hover {
+    background-color: rgb(250, 244, 255);
+    color: black;
+}
+
+.status-text {
+    color: white;
+}
+
+.status {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+} 
+
+.logo-img {
+    position: absolute;
+    width: 280px;
+    height: 200px;
+    border: 5px solid black;
+}
