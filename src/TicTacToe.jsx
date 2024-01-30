@@ -104,6 +104,7 @@ export default TicTacToe;
 
 import React, { useState } from 'react';
 import Confetti from 'react-confetti';
+import Footer from './Footer';
 
 const calculateWinner = (squares) => {
   const lines = [
@@ -179,7 +180,7 @@ const TicTacToe = () => {
   }
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-4">
+    <div className="w-full min-h-screen grid grid-row 3 justify-items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-4">
       <div className="mb-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-2">5x5 Tic Tac Toe</h2>
         <p className="text-white">Player 1 (X) vs Player 2 (O)</p>
@@ -207,6 +208,7 @@ const TicTacToe = () => {
           Reset Game
         </button>
       </div>
+      <Footer />
     </div>
   );
 };
