@@ -1,0 +1,86 @@
+/* 
+body {
+  background-color: rgb(61, 2, 117);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 75px;
+  box-shadow: 0 0 0 1.5px rgb(4, 194, 112);
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: 3px solid rgb(4, 194, 112);
+  color: white;
+}
+
+#cell-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
+  
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+  color: white;
+  font-family: 'poppins', sans-serif;
+}
+
+.restart-btn {
+  width: 200px;
+  height: 70px;
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid blueviolet;
+  border-radius: 20px;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+
+}
+.restart-btn:hover {
+  background-color: rgb(187, 122, 247);
+}
+ */
+
+ .game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.status {
+  margin-bottom: 10px;
+}
