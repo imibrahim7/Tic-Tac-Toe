@@ -10,6 +10,8 @@ const calculateWinner = (squares) => {
     [0, 3, 6],
     [1, 4, 7],
     [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
   ];
 
   for (let i = 0; i < lines.length; i++) {
@@ -96,7 +98,7 @@ const TicTacToe = () => {
       <div className="mt-4 text-center">
         {winner && confettiActive && <Confetti numberOfPieces={500} />}
         <button
-          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={handleRestart}
         >
           Reset Game
